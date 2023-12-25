@@ -19,7 +19,7 @@ Current "features":
 - read and display default runes from League Client
 
 Future ideas:
-- add Haze's RPC 
+- add Haze's RPC https://github.com/Its-Haze/league-rpc-linux
 
 ginju.gg  consists of the following LoL open source projects:
 - Leaguestats: https://github.com/vkaelin/LeagueStats
