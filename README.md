@@ -33,23 +33,6 @@ I'm Ginju and I live in germany. I have absolutely no developer experience and j
 
 Feel free to contribute and test it yourself! Also don't forget to join the League of Linux community on Discord: https://discord.gg/mXVCuFnkzB
 
-## License
-
-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)  
-https://creativecommons.org/licenses/by-nc-sa/4.0/
-
-### You are free to:
-
-Share — copy and redistribute the material in any medium or format
-
-Adapt — remix, transform, and build upon the material
-
-### Under the following terms:
-
-NonCommercial — You may not use the material for commercial purposes.
-
-ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
-
 ## Project setup
 
 ### Clone Repository and change directory
@@ -57,7 +40,7 @@ ShareAlike — If you remix, transform, or build upon the material, you must dis
 git clone https://github.com/GinjuGG/LoLLinuxClient.git && cd LoLLinuxClient
 ```
 
-### Setup NodeJS environment
+### Install npm dependencies
 ```
 npm install
 ```
@@ -85,3 +68,19 @@ change:
 - ``
 electron.getLeagueOfLegendsPath('/path/to/your/leagueclient/insdie/wineprefix/lockfile')
 ``
+## License
+
+NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)  
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+### You are free to:
+
+Share — copy and redistribute the material in any medium or format
+
+Adapt — remix, transform, and build upon the material
+
+### Under the following terms:
+
+NonCommercial — You may not use the material for commercial purposes.
+
+ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
