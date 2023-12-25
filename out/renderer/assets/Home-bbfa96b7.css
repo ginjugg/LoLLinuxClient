@@ -1,0 +1,23 @@
+
+.line[data-v-782e955d] {
+  background: rgba(178, 245, 234, 0.55);
+}
+.line[data-v-782e955d]::after {
+  content: '';
+  position: absolute;
+  width: 4.5rem;
+  height: 0.5rem;
+  background: rgba(178, 245, 234, 0.55);
+}
+.line-top[data-v-782e955d]::after {
+  transform-origin: bottom right;
+  transform: rotate(90deg) translateX(100%);
+}
+.line-bottom[data-v-782e955d]::after {
+  transform-origin: top left;
+  transform: rotate(90deg) translateX(-100%);
+  margin-left: 0.5rem;
+}
+.logo[data-v-782e955d] {
+  top: -160px;
+}

@@ -1,0 +1,35 @@
+
+.w-team[data-v-b9422ab8] {
+  width: 40rem;
+}
+.w-ranked[data-v-b9422ab8] {
+  width: 13.75rem;
+}
+.w-bans[data-v-b9422ab8] {
+  width: 5rem;
+}
+.live-team-row td[data-v-b9422ab8] {
+  position: relative;
+  z-index: 20;
+}
+.live-team-row td[data-v-b9422ab8]:first-child:before {
+  content: '';
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1160px;
+  background-image: var(--bg-img);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+.runes[data-v-b9422ab8] {
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.runes[data-v-b9422ab8]:hover {
+  filter: brightness(1.3);
+}
