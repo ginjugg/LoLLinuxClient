@@ -28,7 +28,10 @@
               <div class="flex flex-col items-center justify-end">
                 <div
                   v-if="data.role !== 'NONE'"
-                  :style="{ backgroundImage: `url(${'/img/roles/' + data.role + '.png'})` }"
+                  :style="{ 
+                    //backgroundImage: `url(${'../../img/roles/' + data.role + '.png'})` 
+                    backgroundImage: `url(${Images.roleImages[data.role]})`,
+                    }"
                   class="h-10 w-10 bg-cover bg-center"
                 ></div>
                 <div class="w-10 text-center text-xs font-extrabold text-teal-500">
@@ -158,7 +161,8 @@
               <div
                 :style="{
                   backgroundImage:
-                    data.role !== 'NONE' ? `url(${'/img/roles/' + roles[index] + '.png'})` : null,
+                    //data.role !== 'NONE' ? `url(${'/img/roles/' + roles[index] + '.png'})` : null,
+                    data.role !== 'NONE' ? `url(${Images.roleImages[data.role]})` : null,
                 }"
                 class="mx-2 h-4 w-4 bg-cover bg-center"
               ></div>
@@ -218,6 +222,7 @@ import Tooltip from '@/components/Common/Tooltip.vue'
 import DetailedMatch from '@/components/Match/DetailedMatch.vue'
 import MatchItems from '@/components/Match/MatchItems.vue'
 import Ripple from '@/components/Common/Ripple.vue'
+import roleImages from '@img/roles'
 
 export default {
   components: {
@@ -241,6 +246,7 @@ export default {
   data() {
     return {
       showDetails: false,
+      Images: roleImages,
     }
   },
 

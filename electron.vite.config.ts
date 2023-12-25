@@ -12,13 +12,15 @@ export default defineConfig({
   },
   },
   preload: {
-    plugins: [externalizeDepsPlugin()]
+    plugins: [externalizeDepsPlugin()],
+    publicDir: 'src/renderer/public'
   },
   renderer: {
     resolve: {
       alias: {
         '@renderer': resolve('src/renderer/src'),
         '@/': `${path.resolve(__dirname, 'src/renderer/src')}/`,
+        '@img': `${path.resolve(__dirname, 'src/renderer/public/img')}`,
       }
     },
     plugins: [vue()]

@@ -72,7 +72,10 @@
           </template>
         </Tooltip>
         <div
-          :style="{ backgroundImage: `url(${'/img/roles/' + role.role + '.png'})` }"
+          :style="{ 
+            //backgroundImage: `url(${'/img/roles/' + role.role + '.png'})` 
+            backgroundImage: `url(${Images.roleImages[role.role]})` 
+            }"
           class="mt-1 h-4 w-4 bg-cover bg-center"
         ></div>
         <div class="text-xs text-blue-200">{{ role.count }}</div>
@@ -231,8 +234,15 @@
 import { mapState } from 'vuex'
 import Tooltip from '@/components/Common/Tooltip.vue'
 import { gameModes } from '@/data/data.js'
+import roleImages from '@img/roles'
 
 export default {
+  data() {
+    return {
+      Images: roleImages,
+    }
+  },  
+
   components: {
     Tooltip,
   },

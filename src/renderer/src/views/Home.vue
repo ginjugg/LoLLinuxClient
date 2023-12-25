@@ -1,7 +1,7 @@
 <template>
   <div class="relative overflow-hidden bg-blue-900">
     <LazyBackground
-      image-source="/img/bg-homepage-1.jpg"
+      :image-source=backgroundimg
       image-class="absolute inset-0 bg-center"
       transition-name="fade"
     ></LazyBackground>
@@ -35,6 +35,7 @@
 <script>
 import LazyBackground from '@/components/Common/LazyBackgroundImage.vue'
 import SearchForm from '@/components/Form/SearchForm.vue'
+import backgroundImage from '../../public/img/bg-homepage-1.jpg'
 
 console.log('Homeview')
 
@@ -43,6 +44,12 @@ export default {
     LazyBackground,
     SearchForm,
     console,
+  },
+
+  data() {
+    return {
+      backgroundimg: backgroundImage,
+    }
   },
 
   methods: {

@@ -59,7 +59,8 @@
                 <div
                   v-if="player.role !== 'NONE'"
                   :style="{
-                    backgroundImage: `url(${'/img/roles/' + player.role + '.png'})`,
+                    //backgroundImage: `url(${'../../../public/img/roles/' + Images.roleImages[player.role] + '.png'})`,
+                    backgroundImage: `url(${Images.roleImages[player.role]})`,
                   }"
                   class="h-4 w-4 bg-cover bg-center"
                 ></div>
@@ -309,8 +310,20 @@ import { mapActions, mapState } from 'vuex'
 import DotsLoader from '@/components/Common/DotsLoader.vue'
 import Tooltip from '@/components/Common/Tooltip.vue'
 import MatchItems from '@/components/Match/MatchItems.vue'
+import roleImages from '@img/roles'
+
 
 export default {
+
+  data() {
+    return {
+      Images: roleImages,
+    }
+  },  
+
+  mounted() {
+    console.log(this.Images.roleImages['TOP'])
+  },
   components: {
     DotsLoader,
     Tooltip,

@@ -1,7 +1,7 @@
 <template>
   <div class="flex min-h-screen flex-col overflow-hidden bg-blue-900">
     <LazyBackground
-      image-source="/img/bg-homepage-1.jpg"
+      :image-source=backgroundimg
       image-class="absolute z-0 w-full h-[50rem]"
       more-backgrounds="linear-gradient(180deg, rgba(42, 67, 101, 0) 0%, #2A4365 50%),"
       transition-name="fade"
@@ -223,6 +223,7 @@ import SearchForm from '@/components/Form/SearchForm.vue'
 import HeaderLoader from '@/components/Summoner/HeaderLoader.vue'
 import SummonerRanked from '@/components/Summoner/SummonerRanked.vue'
 import Tooltip from '@/components/Common/Tooltip.vue'
+import backgroundImage from '../../public/img/bg-homepage-1.jpg'
 
 export default {
   components: {
@@ -233,12 +234,13 @@ export default {
     SearchForm,
     HeaderLoader,
     SummonerRanked,
-    Tooltip,
+    Tooltip
   },
 
   data() {
     return {
       bgHeader: false,
+      backgroundimg: backgroundImage,
     }
   },
 

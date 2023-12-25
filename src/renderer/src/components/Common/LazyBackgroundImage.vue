@@ -10,6 +10,9 @@
 </template>
 
 <script>
+//import { Tray, nativeImage } from 'electron'
+import backgroundImage from '../../../public/img/bg-homepage-1.jpg'
+
 export default {
   props: {
     imageSource: {
@@ -52,12 +55,15 @@ export default {
       }
       return ''
     },
+    console: () => console,
+    window: () => window,
   },
 
-  mounted() {
+  async mounted() {
     this.$nextTick(() => {
       this.fetchImage()
     })
+
   },
 
   methods: {
