@@ -73,3 +73,15 @@ npm run preview
 ```
 npm run build:linux
 ```
+## Configuring
+Don't expect things to work right away! I hardcoded some things to my environment just for testing:
+- League of Legends Client Path coded in: 
+``
+src/renderer/src/mixins/Test.ts
+``
+
+change:
+
+- ``
+electron.getLeagueOfLegendsPath('/path/to/your/leagueclient/insdie/wineprefix/lockfile')
+``
