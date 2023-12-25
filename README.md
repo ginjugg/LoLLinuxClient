@@ -49,3 +49,27 @@ Adapt — remix, transform, and build upon the material
 NonCommercial — You may not use the material for commercial purposes.
 
 ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+## Project setup
+
+### Clone Repository and change directory
+```
+git clone https://github.com/GinjuGG/LoLLinuxClient.git && cd LoLLinuxClient
+```
+
+### Setup NodeJS environment
+```
+npm install
+```
+
+### Compile preview
+
+```
+npm run preview
+```
+
+### Compile and minify for production
+
+```
+npm run build:linux
+```
